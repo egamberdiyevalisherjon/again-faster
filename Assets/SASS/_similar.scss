@@ -1,0 +1,48 @@
+.similar {
+  background-color: $light-color;
+  color: $dark-color;
+  padding: 50px 0;
+
+  h2 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 1em;
+  }
+
+  .card {
+    position: relative;
+    font-family: "Oswald", sans-serif;
+
+    .badge {
+      font-size: 12px;
+      font-family: "Open Sans", sans-serif;
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      background-color: $light-color;
+      display: inline-block;
+      padding: 0.4em 0.8em;
+    }
+
+    h4 {
+      font-weight: 400;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+    }
+
+    .star {
+      width: 16px;
+
+      &s {
+        margin: 1em 0;
+      }
+    }
+
+    .span {
+      font-weight: 300;
+      font-size: 12px;
+      letter-spacing: 0.16em;
+    }
+  }
+}

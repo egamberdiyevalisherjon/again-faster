@@ -1,0 +1,26 @@
+.perfect {
+  padding: 50px 0;
+
+  .flex {
+    align-items: center;
+  }
+
+  .portion:first-of-type {
+    padding: 0 50px;
+    h2 {
+      font-size: 40px;
+      width: 15ch;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 1000px) {
+      padding: 0;
+
+      h2 {
+        width: 100%;
+      }
+    }
+  }
+}

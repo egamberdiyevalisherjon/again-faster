@@ -1,0 +1,96 @@
+.main-footer {
+  background-color: $light-grey-color;
+  color: $dark-color;
+  position: relative;
+  z-index: 1;
+  padding: 50px 0;
+  overflow: hidden;
+
+  .bg {
+    position: absolute;
+    z-index: -1;
+    width: 450px;
+    left: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  img:not(.bg) {
+    width: 16px;
+  }
+
+  .portion {
+    padding-right: 150px;
+
+    @media (max-width: 1000px) {
+      padding: 0;
+    }
+  }
+
+  form {
+    display: block;
+    position: relative;
+
+    input {
+      all: unset;
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-bottom: 1px solid $grey-color;
+      padding: 1em 0;
+      margin: 1em 0;
+    }
+
+    button {
+      all: unset;
+      box-sizing: border-box;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__nav {
+    display: flex;
+
+    &-socials {
+      display: flex;
+      gap: 1rem;
+    }
+
+    menu {
+      width: 200px;
+
+      h3 {
+        margin: 2rem 0;
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 0.16em;
+      }
+
+      li {
+        color: $dark-grey-color;
+        padding: 0.5em 0;
+      }
+    }
+  }
+
+  @media (max-width: 1000px) {
+    menu {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 700px) {
+    &__nav {
+      flex-direction: column;
+    }
+
+    .bg {
+      top: auto;
+      transform: translateY(10%);
+      bottom: 0;
+    }
+  }
+}

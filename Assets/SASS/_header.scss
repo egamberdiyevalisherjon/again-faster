@@ -1,0 +1,67 @@
+.main-header {
+  background-color: $light-color;
+  color: $dark-color;
+  text-transform: uppercase;
+
+  &__top {
+    background-color: $header-top-bg-color;
+
+    &-text {
+      font-family: "Oswald", sans-serif;
+      font-weight: 300;
+      font-size: 12px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      letter-spacing: 0.16em;
+    }
+  }
+
+  .portion:nth-of-type(1) {
+    display: none;
+
+    img {
+      width: 16px;
+    }
+  }
+
+  &__bottom {
+    padding: 1em 0;
+    font-size: 12px;
+
+    .main-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .logo {
+        width: 250px;
+      }
+
+      menu {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 2em;
+      }
+
+      &__action {
+        width: 16px;
+      }
+
+      @media (max-width: 1000px) {
+        & .portion:nth-of-type(3) {
+          display: none;
+        }
+
+        & .portion:nth-of-type(1) {
+          display: block;
+        }
+
+        & .main-nav__action:not(:last-of-type) {
+          display: none;
+        }
+      }
+    }
+  }
+}

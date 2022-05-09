@@ -1,0 +1,32 @@
+.container {
+  width: 1000px;
+  margin: 0 auto;
+
+  @media (max-width: 1000px) {
+    width: 700px;
+  }
+
+  @media (max-width: 700px) {
+    width: 100%;
+    padding: 0 1rem;
+  }
+}
+
+.container-fluid {
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.portion {
+  flex: 1;
+}
+
+footer .flex,
+section .flex {
+  display: flex;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
